@@ -3,7 +3,7 @@
 # This was fun exercise to get the understanding of list, tuples, loops, and plots.
 # This program is designed to receive input from the user for coordinates suggestions.
 # After receiving the suggestions they are stored in a empty list and later displayed.
-# Then the two list are represented ina graph based on the X and Y axis.
+# Then the two list are represented in a graph based on the X and Y axis.
 
 import matplotlib.pyplot as plt # alias is plt to refer to the import module
 
@@ -32,7 +32,11 @@ def insertion():
 
 def main():
 
-    plt.plot(insertion()) # alias with the function as the argument
+    plt.plot(insertion(), marker ='o') # alias with the function as the argument
+    plt.title('Title Bar') # Labels for graphs
+    plt.xlabel('X Label')
+    plt.ylabel('Y Label')
+    plt.grid(True)
 
     plt.show() # in order for the graph to show
 
